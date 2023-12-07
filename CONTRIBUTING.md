@@ -36,6 +36,5 @@ We welcome contributions to improve the NYC Major Felony Visualization project! 
    I'll review your pull request and may request additional changes. Once approved, your changes will be merged into the main branch.
 
 Thank you for contributing!
-```
 
 Feel free to adjust the branch names, commit messages, or any other details to match your project's conventions.
