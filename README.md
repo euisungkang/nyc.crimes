@@ -67,7 +67,7 @@ Make sure you have Python installed on your machine, and consider using a virtua
   <figcaption>Line plot showcasing the trend of total number of major felonies in each precinct from 2000 ~ 2022</figcaption>
 </figure>
 
-#### Crimes in NYC by Precinct
+#### Heatmap by Precinct
 <figure>
 <img alt="Total Felonies by Precinct Plot" src="Plots/Precinct-Heatmap.png" style="width:50%">
   <figcaption>Heatmap visualizations offering an at-a-glance view of major felonies distribution across precincts</figcaption>
@@ -79,7 +79,7 @@ Make sure you have Python installed on your machine, and consider using a virtua
   <figcaption>Line plot showcasing the trend of average number of major felonies in each borough from 2000 ~ 2022</figcaption>
 </figure>
 
-#### Crimes in NYC by Borough
+#### Heatmap by Borough
 <figure>
   <img alt="Total Felonies by Precinct Plot" src="Plots/Borough-Heatmap.png" style="width:50%">
   <figcaption>Heatmap visualizations offering an at-a-glance view of major felonies distribution across boroughs</figcaption>
