@@ -95,7 +95,7 @@ Make sure you have Python installed on your machine, and consider using a virtua
 The data is sourced from the [NYC Open Data](https://opendata.cityofnewyork.us/), and released by the [NYPD](https://www.nyc.gov/site/nypd/stats/crime-statistics/historical.page). The dataset spans from the year 2000 to 2022, providing a comprehensive view of major felony offenses in New York City.
 
 # Contributing
-If you'd like to contribute to this project, please check out our [contribution guidelines](CONTRIBUTING.md).
+If you'd like to contribute to this project, please check out the [contribution guidelines](CONTRIBUTING.md).
 
 # License
 
