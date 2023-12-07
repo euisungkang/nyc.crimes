@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/euisungkang/NYC-Crime-Analysis"><img src="https://i.ibb.co/xXdbt0S/Wide-HD.png" alt="NYC Illustration"></a>
+  <a href="https://github.com/euisungkang/NYC-Major-Felony-Offenses"><img src="https://i.ibb.co/xXdbt0S/Wide-HD.png" alt="NYC Illustration"></a>
   <br>
   NYC Major Felony Offenses 
   <br>
