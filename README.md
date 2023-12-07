@@ -62,25 +62,34 @@ Make sure you have Python installed on your machine, and consider using a virtua
 # Visualizations
 
 ### Total Major Felonies by Precinct
-<img alt="Total Felonies by Precinct Plot" src="Plots/Total-Felonies-by-Precinct.png">
-<br>Line plot showcasing the trend of **total** number of major felonies in each precinct from 2000 ~ 2022
-
+<figure>
+  <img alt="Total Felonies by Precinct Plot" src="Plots/Total-Felonies-by-Precinct.png">
+  <figcaption>Line plot showcasing the trend of total number of major felonies in each precinct from 2000 ~ 2022</figcaption>
+</figure>
 
 #### Crimes in NYC by Precinct
+<figure>
 <img alt="Total Felonies by Precinct Plot" src="Plots/Precinct-Heatmap.png" style="width:50%">
-<br>Heatmap visualizations offering an at-a-glance view of major felonies distribution across precincts
+  <figcaption>Heatmap visualizations offering an at-a-glance view of major felonies distribution across precincts</figcaption>
+</figure>
 
 ### Average Major Felonies by Borough
-<img alt="Total Felonies by Precinct Plot" src="Plots/Average-Felonies-by-Borough.png">
-<br>Line plot showcasing the trend of **average** number of major felonies in each borough from 2000 ~ 2022
+<figure>
+  <img alt="Total Felonies by Precinct Plot" src="Plots/Average-Felonies-by-Borough.png">
+  <figcaption>Line plot showcasing the trend of average number of major felonies in each borough from 2000 ~ 2022</figcaption>
+</figure>
 
 #### Crimes in NYC by Borough
-<img alt="Total Felonies by Precinct Plot" src="Plots/Borough-Heatmap.png" style="width:50%">
-<br>Heatmap visualizations offering an at-a-glance view of major felonies distribution across boroughs
+<figure>
+  <img alt="Total Felonies by Precinct Plot" src="Plots/Borough-Heatmap.png" style="width:50%">
+  <figcaption>Heatmap visualizations offering an at-a-glance view of major felonies distribution across boroughs</figcaption>
+</figure>
 
 ### Average Major Felonies by Crime
-<img alt="Total Felonies by Precinct Plot" src="Plots/Average-Felonies-by-Crime.png">
-<br>Line plot showcasing the trend of **average** number of crimes by each major felony type from 2000 ~ 2022
+<figure>
+  <img alt="Total Felonies by Precinct Plot" src="Plots/Average-Felonies-by-Crime.png">
+  <figcaption>Line plot showcasing the trend of average number of crimes by each felony type from 2000 ~ 2022</figcaption>
+</figure>
 
 # Data Source
 The data is sourced from the [NYC Open Data](https://opendata.cityofnewyork.us/), and released by the [NYPD](https://www.nyc.gov/site/nypd/stats/crime-statistics/historical.page). The dataset spans from the year 2000 to 2022, providing a comprehensive view of major felony offenses in New York City.
