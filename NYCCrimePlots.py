@@ -1,11 +1,6 @@
-from datetime import datetime
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 import numpy as np
-import os
 import pandas as pd
-import seaborn as sns
-import time
 
 class NYCCrimePlots :
     def __init__(self) :
@@ -125,18 +120,3 @@ class NYCCrimePlots :
         plt.grid()
 
         return boroughs
-    
-    def visualizePlots() :
-        plt.show()
-
-# if __name__ == '__main__':
-
-
-
-#     plots = NYCCrimePlot(df)
-
-#     plots.totalFeloniesbyPrecinct()
-#     plots.avgFeloniesbyBorough()
-#     plots.avgFeloniesbyCrime()
-
-#     plt.show()

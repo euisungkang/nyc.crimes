@@ -1,16 +1,10 @@
-from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import numpy as np
-import os
 import pandas as pd
-import seaborn as sns
 import geopandas as gpd
 import geodatasets
 from shapely.wkt import loads
-import time
-import os
-os.system("clear")
 
 from NYCCrimePlots import NYCCrimePlots
 
@@ -39,7 +33,7 @@ class NYCCrimeHeatmap :
 
         bar_info = plt.cm.ScalarMappable(cmap="Reds", norm=plt.Normalize(vmin=0, vmax=3000))
         bar_info._A = []
-        cbar = fig.colorbar(bar_info, ax=ax)
+        cbar = fig.colorbar(bar_info, fraction=0.04, ax=ax)
     
         plt.xticks(rotation=90)
         plt.axis('off')
@@ -60,29 +54,13 @@ class NYCCrimeHeatmap :
 
         fig, ax = plt.subplots(1, figsize=(8, 8))
         
-        plt.title('Crimes in NYC by Borough', fontsize=20, pad=30)
+        plt.title('Crimes in NYC by Borough', fontsize=20, pad=20)
 
         bar_info = plt.cm.ScalarMappable(cmap="Reds", norm=plt.Normalize(vmin=0, vmax=3000))
         bar_info._A = []
-        cbar = fig.colorbar(bar_info, ax=ax)
+        cbar = fig.colorbar(bar_info, fraction=0.046, ax=ax)
     
         plt.xticks(rotation=90)
         plt.axis('off')
 
         map_and_stats.plot(column=2010, cmap="Reds", linewidth=0.4, ax=ax, edgecolor=".4")
-
-
-if __name__ == '__main__' :
-
-    plots = NYCCrimePlots()
-    heatmap = NYCCrimeHeatmap()
-
-    borough = plots.avgFeloniesbyBorough()
-    borough = borough.T
-    heatmap.boroughHeatmap(borough)
-    
-    precinct = plots.totalFeloniesbyPrecinct()
-    precinct = precinct.T
-    heatmap.precinctHeatmap(precinct)
-
-    plt.show()
