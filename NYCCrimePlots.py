@@ -6,12 +6,14 @@ import os
 import pandas as pd
 import seaborn as sns
 import time
-import os
-os.system("clear")
 
-class NYCCrimePlot() :
-    def __init__(self, df) :
-        
+class NYCCrimePlots :
+    def __init__(self) :
+
+        # Get raw data from NYC website
+        raw_data = pd.read_excel('data.xlsx', engine='openpyxl')
+        df = raw_data.copy()
+
         # Fill Merged cells with precinct numbers
         df["PCT"] = raw_data["PCT"].fillna(method='ffill', axis = 0)
 
@@ -45,6 +47,7 @@ class NYCCrimePlot() :
         plt.margins(x=0)
         plt.grid()
 
+        return crimes
 
     """
     Total Major Felonies by Precinct
@@ -69,7 +72,7 @@ class NYCCrimePlot() :
 
         # Create Grid
         precincts.plot(figsize=(20,10), alpha=0.7)
-        plt.title('Total Major Felonies by Precinct (2000 ~ 2022)', fontsize=20)
+        plt.title('Total Major Felonies by Precinct (2000 ~ 2022)', fontsize=20, pad=30)
         plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0, fontsize=7, ncol=2)
         plt.xlabel('Years (2000 ~ 2022)', fontsize=12)
         plt.ylabel('Total Major Felonies', fontsize=12)
@@ -77,6 +80,7 @@ class NYCCrimePlot() :
         plt.margins(x=0)
         plt.grid()
 
+        return precincts
 
     """
     Average Major Felonies by Borough
@@ -105,16 +109,14 @@ class NYCCrimePlot() :
         boroughs.loc['Bronx'] = df1.loc[40:52].mean().round().values
         boroughs.loc['Brooklyn'] = df1.loc[60:94].mean().round().values
         boroughs.loc['Queens'] = df1.loc[100:115].mean().round().values
-        boroughs.loc['Staten'] = df1.loc[120:123].mean().round().values
-
-        print(boroughs)
+        boroughs.loc['Staten Island'] = df1.loc[120:123].mean().round().values
 
         # x = borough, y = average number of major felonies
         boroughs = boroughs.T
 
         # Create Grid
         boroughs.plot(figsize=(20, 10), alpha=0.7)
-        plt.title('Average Major Felonies by Borough (2000 ~ 2022)', fontsize=20)
+        plt.title('Average Major Felonies by Borough (2000 ~ 2022)', fontsize=20, pad=30)
         plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0, fontsize=10)
         plt.xlabel('Years (2000 ~ 2022)', fontsize=12)
         plt.ylabel('Average Major Felonies', fontsize=12)
@@ -122,16 +124,19 @@ class NYCCrimePlot() :
         plt.margins(x=0)
         plt.grid()
 
-if __name__ == '__main__':
+        return boroughs
+    
+    def visualizePlots() :
+        plt.show()
 
-    # Get raw data from NYC website
-    raw_data = pd.read_excel('data.xlsx', engine='openpyxl')
-    df = raw_data.copy()
+# if __name__ == '__main__':
 
-    plots = NYCCrimePlot(df)
 
-    plots.totalFeloniesbyPrecinct()
-    plots.avgFeloniesbyBorough()
-    plots.avgFeloniesbyCrime()
 
-    plt.show()
+#     plots = NYCCrimePlot(df)
+
+#     plots.totalFeloniesbyPrecinct()
+#     plots.avgFeloniesbyBorough()
+#     plots.avgFeloniesbyCrime()
+
+#     plt.show()
