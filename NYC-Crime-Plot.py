@@ -45,7 +45,6 @@ plt.ylabel('Total Major Felonies', fontsize=12)
 
 plt.xticks(precincts.index.values)
 
-#plt.ylim([0, 7000])
 plt.margins(x=0)
 
 plt.grid()
