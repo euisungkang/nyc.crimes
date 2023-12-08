@@ -87,7 +87,6 @@ precinct = plots.totalFeloniesbyPrecinct()
 ```
 <figure>
   <img alt="Total Felonies by Precinct Plot" src="Plots/Total-Felonies-by-Precinct.png">
-  <figcaption>Line plot showcasing the trend of total number of major felonies in each precinct from 2000 ~ 2022</figcaption>
 </figure>
 
 One of the first visualizations using the raw data provided is the Total Number of Major Felonies by Precinct over 22 years. At first glance, it's difficult to pinpoint any specific patterns. Perhaps, we can note that the general trend of major felony offenses has been on a downhill trend since 2000, with an uphill starting 2021. However, each of the 77 precincts in NYC has its own trend, and it's near impossible to distinguish between each one in the visualization. <br><br>
@@ -99,7 +98,6 @@ borough = plots.avgFeloniesbyBorough()
 ```
 <figure>
   <img alt="Total Felonies by Precinct Plot" src="Plots/Average-Felonies-by-Borough.png">
-  <figcaption>Line plot showcasing the trend of average number of major felonies in each borough from 2000 ~ 2022</figcaption>
 </figure>
 
 Immediately, we can notice the previous general patterns:
