@@ -50,7 +50,6 @@ The objective behind this project is to offer a valuable resource for both the g
  3. `RelevantNews` : queries relevant news based on **location, topic, year**
 
 
-
 # Usage
 To run the program and generate the visualizations, follow these steps:
 

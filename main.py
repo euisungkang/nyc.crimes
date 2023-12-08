@@ -7,19 +7,19 @@ os.system('clear')
 
 if __name__ == '__main__' :
     news = News()
-    #result = news.search("Staten Island", "Crimes", "2012")
+    result = news.search("Staten Island", "Crimes", "2012")
 
     plots = Plots()
-    # heatmap = Heatmap()
+    heatmap = Heatmap()
 
     borough = plots.avgFeloniesbyBorough()
     borough = borough.T
-    #heatmap.boroughHeatmap(borough)
+    heatmap.boroughHeatmap(borough)
     
-    # precinct = plots.totalFeloniesbyPrecinct()
-    # precinct = precinct.T
-    # heatmap.precinctHeatmap(precinct)
+    precinct = plots.totalFeloniesbyPrecinct()
+    precinct = precinct.T
+    heatmap.precinctHeatmap(precinct)
 
-    # crimes = plots.avgFeloniesbyCrime()
+    crimes = plots.avgFeloniesbyCrime()
 
     plt.show()
