@@ -109,7 +109,7 @@ Immediately, we can notice the previous general patterns:
 However, we can also notice specific patterns such as Staten Island having a spike of offenses in 2012.<br>Let's take a closer look using the **line plot GUI.**
 
 <p float="left">
-  <img alt="Staten Island Zoomed" src="Plots/Staten-Island-Zoomed.png" style="width: 49.5%">
+  <img alt="Staten Island Zoomed" src="Plots/Staten-Island-Zoomed.png" style="width: 49%">
   <img alt="Staten Island Zoomed2" src="Plots/Staten-Island-Zoomed2.png" style="width: 45%">
 </p>
 
