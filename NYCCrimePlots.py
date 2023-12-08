@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-class NYCCrimePlots :
+class Plots :
     def __init__(self) :
 
         # Get raw data from NYC website
@@ -99,7 +99,7 @@ class NYCCrimePlots :
         # Make sure all columns (years) are of numeric value
         df1.columns = pd.to_numeric(df1.columns)
 
-        boroughs = pd.DataFrame(index=['Manhattan', 'Bronx', 'Brooklyn', 'Queens', 'Staten'], columns=df1.columns)
+        boroughs = pd.DataFrame(index=['Manhattan', 'Bronx', 'Brooklyn', 'Queens', 'Staten Island'], columns=df1.columns)
         boroughs.loc['Manhattan'] = df1.loc[1:34].mean().round().values
         boroughs.loc['Bronx'] = df1.loc[40:52].mean().round().values
         boroughs.loc['Brooklyn'] = df1.loc[60:94].mean().round().values

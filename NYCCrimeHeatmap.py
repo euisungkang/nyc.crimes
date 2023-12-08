@@ -6,9 +6,7 @@ import geopandas as gpd
 import geodatasets
 from shapely.wkt import loads
 
-from NYCCrimePlots import NYCCrimePlots
-
-class NYCCrimeHeatmap :
+class Heatmap :
     def precinctHeatmap(self, df) :
 
         # Read Geo Shapes of all Precincts of NYC
